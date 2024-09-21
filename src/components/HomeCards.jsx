@@ -35,12 +35,6 @@ const HomeCards = () => {
             <h3 className='font-bold text-5xl mt-2 mb-4'>
               200
             </h3>
-            {/* <Link
-              to='/add-user'
-              className='inline-block bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600'
-            >
-              New Admission
-            </Link> */}
           </Card>
         </div>
       </div>
