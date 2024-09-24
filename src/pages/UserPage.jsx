@@ -56,7 +56,7 @@ const UserPage = ({ deleteUser }) => {
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
                 <h3 className='text-green-800 text-lg font-bold mb-6'>
                   {/* About User */}
-                  User Description
+                  About {user.name}
                 </h3>
 
                 <p className='mb-4'>{user.reasons}</p>
