@@ -96,14 +96,14 @@ const AddUserPage = ({ addUserSubmit }) => {
                 htmlFor='reasons'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Reasons
+                About User
               </label>
               <textarea
                 id='reasons'
                 name='reasons'
                 className='border rounded w-full py-2 px-3'
                 rows='4'
-                placeholder='Add any user duties, expectations, requirements, etc'
+                placeholder='Add user details, expectations, etc'
                 value={reasons}
                 onChange={(e) => setReasons(e.target.value)}
               ></textarea>
