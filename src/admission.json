@@ -95,6 +95,36 @@
         "contactEmail": "sarafinanimely@gmail.com",
         "contactPhone": "808-525-6565"
       }
+    },
+    {
+      "id": "33be",
+      "name": "Tamtos Jallah",
+      "type": "Daily",
+      "location": "17 Street Sinkor",
+      "reasons": "Testing Reasons for savings",
+      "saving": "1500",
+      "currency": "USD / Day",
+      "company": {
+        "name": "Survivor's Truths Liberia",
+        "reasons": "wseweee",
+        "contactEmail": "jallahtamba23@gmail.com",
+        "contactPhone": "0775940152"
+      }
+    },
+    {
+      "id": "6678",
+      "name": "Jemore Tokpa",
+      "type": "Yearly",
+      "location": "Vamuma",
+      "reasons": "About Jerome and testing",
+      "saving": "4000",
+      "currency": "USD / Day",
+      "company": {
+        "name": "Spark Solutions",
+        "reasons": "Randpom",
+        "contactEmail": "jtokpa@sparksolutions.expert",
+        "contactPhone": "0777973774"
+      }
     }
   ]
 }
