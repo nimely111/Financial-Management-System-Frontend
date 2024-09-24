@@ -31,7 +31,8 @@ const UserPage = ({ deleteUser }) => {
             to='/users'
             className='text-green-500 hover:text-green-600 flex items-center'
           >
-            <FaArrowLeft className='mr-2' /> Back to User Listings
+            {/* backward arrow */}
+            <FaArrowLeft className='mr-2' /> Back to Admission Listings
           </Link>
         </div>
       </section>
