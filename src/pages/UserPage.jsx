@@ -53,7 +53,7 @@ const UserPage = ({ deleteUser }) => {
             <main>
               <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
                 <span>
-                  <img className='-mt-3 mb-5 md:w-28 md:h-28 md:mx-0 sm:mx-auto sm:h-28 sm:w-28 rounded-full' src={logo} alt={logo} />
+                  <img className='-mt-3 mb-5 mx-auto w-28 h-28 md:mx-0 rounded-full' src={logo} alt={logo} />
                 </span>
                 <div className='text-gray-500 mb-4'>{user.type}</div>
                 <h1 className='text-3xl font-bold mb-4'>{user.name}</h1>
