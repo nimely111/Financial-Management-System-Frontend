@@ -1,13 +1,19 @@
+import { useState } from 'react'
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import SavingsTable from '../components/SavingsTable';
+import AddRecordForm from '../components/AddRecordForm';
 import logo from '../assets/images/accnt-finance-logo.png'
 
 const UserPage = ({ deleteUser }) => {
   const navigate = useNavigate();
   const { id } = useParams();
   const user = useLoaderData();
+
+  const [records, setRecords] = useState([]) //Records state to track savings history
+
 
   const onDeleteClick = (userId) => {
     const confirm = window.confirm(
@@ -22,6 +28,10 @@ const UserPage = ({ deleteUser }) => {
 
     navigate('/users');
   };
+
+  const addRecord = (record) => {
+    setRecords([...records, record]);
+  }
 
   return (
     <>
@@ -67,17 +77,16 @@ const UserPage = ({ deleteUser }) => {
               </div>
 
               {/* user details saving table */}
+                 <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+                  <h3 className='text-green-800 text-lg font-bold mb-2'>
+                    Add New Savings Record
+                    </h3>
+                   <AddRecordForm addRecord={addRecord} />
+                </div>
+             
+              {/* Savings History Table */}
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-
-                <p className='mb-4'>{user.about}</p>
-
-                <h3 className='text-green-800 text-lg font-bold mb-2'>
-                  Saving's Table
-                </h3>
-
-                <p className='mb-4'>{user.saving}
-                  <span className='ml-1'>{user.currency}</span>
-                </p>
+                <SavingsTable records={records} />
               </div>
             </main>
 
