@@ -12,7 +12,8 @@
         "about": "Monrovia is the place to be and it offers basically everything you will new when visited",
         "contactEmail": "samuelehnimely@gmail.com",
         "contactPhone": "0777973774"
-      }
+      },
+      "records":[]
     },
     {
       "id": "2",
@@ -25,7 +26,8 @@
         "name": "Veneer Solutions",
         "contactEmail": "contact@loremipsum.com",
         "contactPhone": "888-888-8888"
-      }
+      },
+      "records":[]
     },
     {
       "id": "3",
