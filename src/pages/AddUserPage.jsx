@@ -8,7 +8,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [location, setLocation] = useState('');
   const [saving, setSaving] = useState('');
   const [currency, setCurrency] = useState('');
-  const [companyName, setCompanyName] = useState('');
+  const [cityName, setCityName] = useState('');
   const [aboutUser, setAboutUser] = useState('');
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
@@ -20,7 +20,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   
     // validation
     if (!name || !type || !location || !saving || 
-        !companyName || !aboutUser || !contactEmail || !contactPhone) {
+        !cityName || !aboutUser || !contactEmail || !contactPhone) {
       toast.warning('Please fill in all fields');
       return; // stop submission if validation fails
     }
@@ -32,9 +32,9 @@ const AddUserPage = ({ addUserSubmit }) => {
       location,
       saving,
       currency,
-      company: {
-        name: companyName,
-        reasons: aboutUser,
+      city: {
+        name: cityName,
+        about: aboutUser,
         contactEmail,
         contactPhone,
       },
@@ -132,52 +132,52 @@ const AddUserPage = ({ addUserSubmit }) => {
 
             <div className='mb-4'>
               <label className='block text-gray-700 font-bold mb-2'>
-                Location
+                City Location
               </label>
               <input
                 type='text'
                 id='location'
                 name='location'
                 className='border rounded w-full py-2 px-3 mb-2'
-                placeholder='Company Location'
+                placeholder='City Location'
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               />
             </div>
 
-            <h3 className='text-2xl mb-5'>Company Info</h3>
+            <h3 className='text-2xl mb-5'>City Info</h3>
 
             <div className='mb-4'>
               <label
-                htmlFor='company'
+                htmlFor='city'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Company Name
+                City Name
               </label>
               <input
                 type='text'
-                id='company'
-                name='company'
+                id='city'
+                name='city'
                 className='border rounded w-full py-2 px-3'
-                placeholder='Company Name'
-                value={companyName}
-                onChange={(e) => setCompanyName(e.target.value)}
+                placeholder='City Name'
+                value={cityName}
+                onChange={(e) => setCityName(e.target.value)}
               />
             </div>
 
             <div className='mb-4'>
               <label
-                htmlFor='company_reasons'
+                htmlFor='city_about'
                 className='block text-gray-700 font-bold mb-2'
               >
                 About User
               </label>
               <textarea
-                id='company_reasons'
-                name='company_reasons'
+                id='about'
+                name='about'
                 className='border rounded w-full py-2 px-3'
                 rows='4'
-                placeholder='What does your company do?'
+                placeholder='Describe yourself'
                 value={aboutUser}
                 onChange={(e) => setAboutUser(e.target.value)}
               ></textarea>
