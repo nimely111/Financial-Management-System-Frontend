@@ -4,13 +4,14 @@
       "id": "1",
       "name": "Samuel E. H. Nimely",
       "type": "Monthly",
-      "location": "14th Street Coleman Avenue",
+      "location": "Monrovia",
       "saving": "500.00",
       "currency": "USD / Month",
       "city": {
-        "name": "NewTek Solutions",
-        "contactEmail": "contact@teksolutions.com",
-        "contactPhone": "555-555-5555"
+        "name": "Monrovia",
+        "about": "Monrovia is the place to be and it offers basically everything you will new when visited",
+        "contactEmail": "samuelehnimely@gmail.com",
+        "contactPhone": "0777973774"
       }
     },
     {

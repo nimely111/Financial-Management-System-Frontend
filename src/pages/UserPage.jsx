@@ -54,12 +54,8 @@ const UserPage = ({ deleteUser }) => {
               </div>
 
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-                <h3 className='text-green-800 text-lg font-bold mb-6'>
-                  {/* About User */}
-                  About {user.name}
-                </h3>
 
-                <p className='mb-4'>{user.reasons}</p>
+                <p className='mb-4'>{user.about}</p>
 
                 <h3 className='text-green-800 text-lg font-bold mb-2'>
                   Saving's Amount
@@ -73,7 +69,7 @@ const UserPage = ({ deleteUser }) => {
               {/* user details saving table */}
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
 
-                <p className='mb-4'>{user.reasons}</p>
+                <p className='mb-4'>{user.about}</p>
 
                 <h3 className='text-green-800 text-lg font-bold mb-2'>
                   Saving's Table
@@ -88,25 +84,25 @@ const UserPage = ({ deleteUser }) => {
             {/* <!-- Sidebar --> */}
             <aside>
               <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-bold mb-6'>Company Info</h3>
+                <h3 className='text-xl font-bold mb-6'>User Info</h3>
 
-                <h2 className='text-2xl'>{user.company.name}</h2>
+                <h2 className='text-2xl'>{user.city.name}</h2>
 
-                <p className='my-2'>{user.company.reasons}</p>
+                <p className='my-2'>{user.city.about}</p>
 
                 <hr className='my-4' />
 
                 <h3 className='text-xl'>Contact Email:</h3>
 
                 <p className='my-2 bg-green-100 p-2 font-bold'>
-                  {user.company.contactEmail}
+                  {user.city.contactEmail}
                 </p>
 
                 <h3 className='text-xl'>Contact Phone:</h3>
 
                 <p className='my-2 bg-green-100 p-2 font-bold'>
                   {' '}
-                  {user.company.contactPhone}
+                  {user.city.contactPhone}
                 </p>
               </div>
 
