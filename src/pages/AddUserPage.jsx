@@ -145,7 +145,7 @@ const AddUserPage = ({ addUserSubmit }) => {
               />
             </div>
 
-            <h3 className='text-2xl mb-5'>City Info</h3>
+            <h3 className='text-2xl mb-5'>User Info</h3>
 
             <div className='mb-4'>
               <label
