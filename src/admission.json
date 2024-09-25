@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Samuel E. H. Nimely",
       "type": "Monthly",
-      "location": "Monrovia",
+      "location": "Montserrado",
       "saving": "500.00",
       "currency": "USD / Month",
       "city": {
@@ -32,13 +32,12 @@
       "name": "Victoria K. Johnson",
       "type": "Monthly",
       "location": "Broad Street, Mon.",
-      "about": "Dummy Data data",
       "saving": "2000.000",
       "currency": "USD / Month",
       "city": {
-        "name": "Dolor Cloud",
-        "about": "Dummy Data data Dummy Data data",
-        "contactEmail": "contact@dolorsitamet.com",
+        "name": "Monrovia",
+        "about": "Monrovia is a place to be.",
+        "contactEmail": "johnsonvictoria@gmail.com",
         "contactPhone": "777-777-7777"
       }
     },
@@ -59,11 +58,12 @@
       "id": "5",
       "name": "David Bemah",
       "type": "Monthly",
-      "location": "Harper City, Maryland",
+      "location": "Maryland",
       "saving": "500.00",
       "currency": "LRD / Month",
       "city": {
-        "name": "Browning Technologies",
+        "name": "Harper City",
+        "about": "Haper is the place to be",
         "contactEmail": "contact@consecteturadipisicing.com",
         "contactPhone": "345-999-5599"
       }
@@ -117,14 +117,13 @@
       "name": "Jemore Tokpa",
       "type": "Yearly",
       "location": "Vamuma",
-      "about": "About Jerome and testing",
       "saving": "4000",
       "currency": "USD / Day",
       "city": {
         "name": "Spark Solutions",
-        "about": "Randpom",
+        "about": "Chief Technology Officer at the Spark Solutions Liberia",
         "contactEmail": "jtokpa@sparksolutions.expert",
-        "contactPhone": "0777973774"
+        "contactPhone": "444-555-3333"
       }
     }
   ]
