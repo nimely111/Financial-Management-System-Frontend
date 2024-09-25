@@ -9,12 +9,12 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [location, setLocation] = useState(user.location);
   const [saving, setSaving] = useState(user.saving);
   const [currency, setCurrency] = useState(user.currency);
-  const [companyName, setCompanyName] = useState(user.company.name);
-  const [companyReasons, setCompanyReasons] = useState(
-    user.company.reasons
+  const [cityName, setCityName] = useState(user.city.name);
+  const [aboutUser, setAboutUser] = useState(
+    user.city.reasons
   );
-  const [contactEmail, setContactEmail] = useState(user.company.contactEmail);
-  const [contactPhone, setContactPhone] = useState(user.company.contactPhone);
+  const [contactEmail, setContactEmail] = useState(user.city.contactEmail);
+  const [contactPhone, setContactPhone] = useState(user.city.contactPhone);
 
   const navigate = useNavigate();
   const { id } = useParams();
@@ -29,9 +29,9 @@ const EditUserPage = ({ updateUserSubmit }) => {
       location,
       saving,
       currency,
-      company: {
-        name: companyName,
-        reasons: companyReasons,
+      city: {
+        name: cityName,
+        about: aboutUser,
         contactEmail,
         contactPhone,
       },
@@ -82,7 +82,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 id='name'
                 name='name'
                 className='border rounded w-full py-2 px-3 mb-2'
-                placeholder='eg. Beautiful Apartment In Miami'
+                placeholder='eg. Enter Full Name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -128,53 +128,53 @@ const EditUserPage = ({ updateUserSubmit }) => {
 
             <div className='mb-4'>
               <label className='block text-gray-700 font-bold mb-2'>
-                Location
+                City Location
               </label>
               <input
                 type='text'
                 id='location'
                 name='location'
                 className='border rounded w-full py-2 px-3 mb-2'
-                placeholder='Company Location'
+                placeholder='City Location'
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               />
             </div>
 
-            <h3 className='text-2xl mb-5'>Company Info</h3>
+            <h3 className='text-2xl mb-5'>User Info</h3>
             <div className='mb-4'>
               <label
-                htmlFor='company'
+                htmlFor='city'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Company Name
+                City Name
               </label>
               <input
                 type='text'
-                id='company'
-                name='company'
+                id='city'
+                name='city'
                 className='border rounded w-full py-2 px-3'
-                placeholder='Company Name'
-                value={companyName}
-                onChange={(e) => setCompanyName(e.target.value)}
+                placeholder='City Name'
+                value={cityName}
+                onChange={(e) => setCityName(e.target.value)}
               />
             </div>
 
             <div className='mb-4'>
               <label
-                htmlFor='company_reasons'
+                htmlFor='city_about'
                 className='block text-gray-700 font-bold mb-2'
               >
-                Company Reasons
+                About User
               </label>
               <textarea
-                id='company_reasons'
-                name='company_reasons'
+                id='about'
+                name='about'
                 className='border rounded w-full py-2 px-3'
                 rows='4'
-                placeholder='What does your company do?'
-                value={companyReasons}
-                onChange={(e) => setCompanyReasons(e.target.value)}
+                placeholder='Describe yourself'
+                value={aboutUser}
+                onChange={(e) => setAboutUser(e.target.value)}
               ></textarea>
             </div>
 
