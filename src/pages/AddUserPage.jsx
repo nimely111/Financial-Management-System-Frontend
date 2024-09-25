@@ -9,7 +9,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [saving, setSaving] = useState('');
   const [currency, setCurrency] = useState('');
   const [companyName, setCompanyName] = useState('');
-  const [companyReasons, setCompanyReasons] = useState('');
+  const [aboutUser, setAboutUser] = useState('');
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
 
@@ -20,7 +20,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   
     // validation
     if (!name || !type || !location || !saving || 
-        !companyName || !companyReasons || !contactEmail || !contactPhone) {
+        !companyName || !aboutUser || !contactEmail || !contactPhone) {
       toast.warning('Please fill in all fields');
       return; // stop submission if validation fails
     }
@@ -34,7 +34,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       currency,
       company: {
         name: companyName,
-        reasons: companyReasons,
+        reasons: aboutUser,
         contactEmail,
         contactPhone,
       },
@@ -178,8 +178,8 @@ const AddUserPage = ({ addUserSubmit }) => {
                 className='border rounded w-full py-2 px-3'
                 rows='4'
                 placeholder='What does your company do?'
-                value={companyReasons}
-                onChange={(e) => setCompanyReasons(e.target.value)}
+                value={aboutUser}
+                onChange={(e) => setAboutUser(e.target.value)}
               ></textarea>
             </div>
 
