@@ -7,7 +7,7 @@
       "location": "14th Street Coleman Avenue",
       "saving": "500.00",
       "currency": "USD / Month",
-      "company": {
+      "city": {
         "name": "NewTek Solutions",
         "contactEmail": "contact@teksolutions.com",
         "contactPhone": "555-555-5555"
@@ -20,7 +20,7 @@
       "location": "Congo Town",
       "saving": "1000.00",
       "currency": "LRD / Month",
-      "company": {
+      "city": {
         "name": "Veneer Solutions",
         "contactEmail": "contact@loremipsum.com",
         "contactPhone": "888-888-8888"
@@ -31,12 +31,12 @@
       "name": "Victoria K. Johnson",
       "type": "Monthly",
       "location": "Broad Street, Mon.",
-      "reasons": "Dummy Data data",
+      "about": "Dummy Data data",
       "saving": "2000.000",
       "currency": "USD / Month",
-      "company": {
+      "city": {
         "name": "Dolor Cloud",
-        "reasons": "Dummy Data data Dummy Data data",
+        "about": "Dummy Data data Dummy Data data",
         "contactEmail": "contact@dolorsitamet.com",
         "contactPhone": "777-777-7777"
       }
@@ -48,7 +48,7 @@
       "location": "Free Port, Mon.",
       "saving": "2000.000",
       "currency": "USD / Day",
-      "company": {
+      "city": {
         "name": "Alpha Elite",
         "contactEmail": "contact@adipisicingelit.com",
         "contactPhone": "555-555-5555"
@@ -61,7 +61,7 @@
       "location": "Harper City, Maryland",
       "saving": "500.00",
       "currency": "LRD / Month",
-      "company": {
+      "city": {
         "name": "Browning Technologies",
         "contactEmail": "contact@consecteturadipisicing.com",
         "contactPhone": "345-999-5599"
@@ -72,10 +72,10 @@
       "name": "Peter Brown",
       "type": "Monthly",
       "location": "Buchanan, G. Bassa",
-      "reasons": "",
+      "about": "",
       "saving": "1500.00",
       "currency": "USD / Month",
-      "company": {
+      "city": {
         "name": "Port Solutions INC",
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "332-515-9565"
@@ -86,12 +86,12 @@
       "name": "Sarafina F. Nimely",
       "type": "Daily",
       "location": "14th Street Coleman Avenue, ",
-      "reasons": "School Fees",
+      "about": "School Fees",
       "saving": "500.00",
       "currency": "LRD / Day",
-      "company": {
+      "city": {
         "name": "For University",
-        "reasons": "Educational Reasons",
+        "about": "Educational About",
         "contactEmail": "sarafinanimely@gmail.com",
         "contactPhone": "808-525-6565"
       }
@@ -101,12 +101,12 @@
       "name": "Tamtos Jallah",
       "type": "Daily",
       "location": "17 Street Sinkor",
-      "reasons": "Testing Reasons for savings",
+      "about": "Testing About for savings",
       "saving": "1500",
       "currency": "USD / Day",
-      "company": {
+      "city": {
         "name": "Survivor's Truths Liberia",
-        "reasons": "wseweee",
+        "about": "wseweee",
         "contactEmail": "jallahtamba23@gmail.com",
         "contactPhone": "0775940152"
       }
@@ -116,12 +116,12 @@
       "name": "Jemore Tokpa",
       "type": "Yearly",
       "location": "Vamuma",
-      "reasons": "About Jerome and testing",
+      "about": "About Jerome and testing",
       "saving": "4000",
       "currency": "USD / Day",
-      "company": {
+      "city": {
         "name": "Spark Solutions",
-        "reasons": "Randpom",
+        "about": "Randpom",
         "contactEmail": "jtokpa@sparksolutions.expert",
         "contactPhone": "0777973774"
       }
