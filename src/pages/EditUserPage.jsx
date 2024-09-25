@@ -7,7 +7,6 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [name, setName] = useState(user.name);
   const [type, setType] = useState(user.type);
   const [location, setLocation] = useState(user.location);
-  const [reasons, setReasons] = useState(user.reasons);
   const [saving, setSaving] = useState(user.saving);
   const [currency, setCurrency] = useState(user.currency);
   const [companyName, setCompanyName] = useState(user.company.name);
@@ -28,7 +27,6 @@ const EditUserPage = ({ updateUserSubmit }) => {
       name,
       type,
       location,
-      reasons,
       saving,
       currency,
       company: {
@@ -88,24 +86,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-            </div>
-            <div className='mb-4'>
-              <label
-                htmlFor='reasons'
-                className='block text-gray-700 font-bold mb-2'
-              >
-                About User
-              </label>
-              <textarea
-                id='reasons'
-                name='reasons'
-                className='border rounded w-full py-2 px-3'
-                rows='4'
-                placeholder='Add user details, expectations, etc'
-                value={reasons}
-                onChange={(e) => setReasons(e.target.value)}
-              ></textarea>
-            </div>             
+            </div>            
               <div className='mb-4'>
               <label
                 htmlFor='type'
