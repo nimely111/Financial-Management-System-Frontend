@@ -30,7 +30,6 @@ const AddUserPage = ({ addUserSubmit }) => {
       name,
       type,
       location,
-      reasons,
       saving,
       currency,
       company: {
