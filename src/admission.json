@@ -13,7 +13,7 @@
         "contactEmail": "samuelehnimely@gmail.com",
         "contactPhone": "0777973774"
       },
-      "records":[]
+      "records": []
     },
     {
       "id": "2",
@@ -27,7 +27,7 @@
         "contactEmail": "contact@loremipsum.com",
         "contactPhone": "888-888-8888"
       },
-      "records":[]
+      "records": []
     },
     {
       "id": "3",
@@ -42,9 +42,7 @@
         "contactEmail": "johnsonvictoria@gmail.com",
         "contactPhone": "777-777-7777"
       },
-      "records": [
-
-      ]
+      "records": []
     },
     {
       "id": "4",
@@ -58,9 +56,7 @@
         "contactEmail": "contact@adipisicingelit.com",
         "contactPhone": "555-555-5555"
       },
-      "records": [
-        
-      ]
+      "records": []
     },
     {
       "id": "5",
@@ -75,9 +71,7 @@
         "contactEmail": "contact@consecteturadipisicing.com",
         "contactPhone": "345-999-5599"
       },
-      "records": [
-        
-      ]
+      "records": []
     },
     {
       "id": "6",
@@ -92,9 +86,7 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "332-515-9565"
       },
-      "records": [
-        
-      ]
+      "records": []
     },
     {
       "id": "59ff",
@@ -110,9 +102,7 @@
         "contactEmail": "sarafinanimely@gmail.com",
         "contactPhone": "808-525-6565"
       },
-      "records": [
-        
-      ]
+      "records": []
     },
     {
       "id": "33be",
@@ -128,9 +118,7 @@
         "contactEmail": "jallahtamba23@gmail.com",
         "contactPhone": "0775940152"
       },
-      "records": [
-        
-      ]
+      "records": []
     },
     {
       "id": "6678",
@@ -145,9 +133,21 @@
         "contactEmail": "jtokpa@sparksolutions.expert",
         "contactPhone": "444-555-3333"
       },
-      "records": [
-        
-      ]
+      "records": []
+    },
+    {
+      "id": "32a0",
+      "name": "John brown",
+      "type": "Daily",
+      "location": "14 street",
+      "saving": "300",
+      "currency": "",
+      "city": {
+        "name": "Monrovia",
+        "about": "This is my bio",
+        "contactEmail": "samuelehnimely@gmail.com",
+        "contactPhone": "777973774"
+      }
     }
   ]
 }

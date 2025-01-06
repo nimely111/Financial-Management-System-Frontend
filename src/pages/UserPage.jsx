@@ -86,7 +86,7 @@ const UserPage = ({ deleteUser }) => {
              
               {/* Savings History Table */}
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-              <SavingsTable records={user.records} />
+                <SavingsTable records={records} />
               </div>
             </main>
 
