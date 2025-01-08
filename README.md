@@ -12,7 +12,7 @@ npm install
 
 ### Run JSON Server
 
-The server will run on http://localhost:8080
+The server will run on http://localhost:8000
 
 ```bash
 npm run server
