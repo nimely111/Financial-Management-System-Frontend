@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "1",
-      "name": "Samuel E. H. Nimely",
+      "name": "James E. H. Nimely",
       "type": "Monthly",
       "location": "Montserrado",
       "saving": "500.00",
@@ -11,9 +11,8 @@
         "name": "Monrovia",
         "about": "Monrovia is the place to be and it offers basically everything you will new when visited",
         "contactEmail": "samuelehnimely@gmail.com",
-        "contactPhone": "0777973774"
-      },
-      "records": []
+        "contactPhone": "0777973775"
+      }
     },
     {
       "id": "2",
@@ -147,6 +146,20 @@
         "about": "This is my bio",
         "contactEmail": "samuelehnimely@gmail.com",
         "contactPhone": "777973774"
+      }
+    },
+    {
+      "id": "efe0",
+      "name": "Connie L. Yealson ",
+      "type": "Monthly",
+      "location": "Paynesville",
+      "saving": "400",
+      "currency": "LRD / Month",
+      "city": {
+        "name": "Monrovia",
+        "about": "about me",
+        "contactEmail": "me@gmail.com",
+        "contactPhone": "777988676"
       }
     }
   ]
