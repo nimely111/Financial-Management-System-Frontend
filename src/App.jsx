@@ -3,33 +3,32 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
-} from 'react-router-dom';
-import MainLayout from './layouts/MainLayout';
-import HomePage from './pages/HomePage';
-import UsersPage from './pages/UsersPage';
-import NotFoundPage from './pages/NotFoundPage';
-import UserPage, { userLoader } from './pages/UserPage';
-import AddUserPage from './pages/AddUserPage';
-import EditUserPage from './pages/EditUserPage';
+} from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import HomePage from "./pages/HomePage";
+import UsersPage from "./pages/UsersPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import UserPage, { userLoader } from "./pages/UserPage";
+import AddUserPage from "./pages/AddUserPage";
+import EditUserPage from "./pages/EditUserPage";
 
 const App = () => {
   // // Add New User
   const addUser = async (newUser) => {
-    const res = await fetch('/api/users', {
-      method: 'POST',
+    const res = await fetch(`${BACKEND_URL}/users`, {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(newUser),
     });
     return;
   };
-  
 
   // Delete User
   const deleteUser = async (id) => {
     const res = await fetch(`/api/users/${id}`, {
-      method: 'DELETE',
+      method: "DELETE",
     });
     return;
   };
@@ -37,9 +36,9 @@ const App = () => {
   // Update User
   const updateUser = async (user) => {
     const res = await fetch(`/api/users/${user.id}`, {
-      method: 'PUT',
+      method: "PUT",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
     });
@@ -48,21 +47,24 @@ const App = () => {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<MainLayout />}>
+      <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path='/users' element={<UsersPage />} />
-        <Route path='/add-user' element={<AddUserPage addUserSubmit={addUser} />} />
+        <Route path="/users" element={<UsersPage />} />
         <Route
-          path='/edit-user/:id'
+          path="/add-user"
+          element={<AddUserPage addUserSubmit={addUser} />}
+        />
+        <Route
+          path="/edit-user/:id"
           element={<EditUserPage updateUserSubmit={updateUser} />}
           loader={userLoader}
         />
         <Route
-          path='/users/:id'
+          path="/users/:id"
           element={<UserPage deleteUser={deleteUser} />}
           loader={userLoader}
         />
-        <Route path='*' element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     )
   );
