@@ -11,6 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import UserPage, { userLoader } from "./pages/UserPage";
 import AddUserPage from "./pages/AddUserPage";
 import EditUserPage from "./pages/EditUserPage";
+import { BACKEND_URL } from "./api";
 
 const App = () => {
   // // Add New User
