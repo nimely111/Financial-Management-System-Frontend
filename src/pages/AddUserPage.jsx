@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 const AddUserPage = ({ addUserSubmit }) => {
   const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
   const [savingsType, setSavingsType] = useState("Yearly");
   const [address, setAddress] = useState("");
   const [saving, setSaving] = useState("");
