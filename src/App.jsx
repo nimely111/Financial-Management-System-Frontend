@@ -28,7 +28,7 @@ const App = () => {
 
   // Delete User
   const deleteUser = async (id) => {
-    const res = await fetch(`${BACKEND_URL}/users/${id}`, {
+    const res = await fetch(`${BACKEND_URL}/users/${user.id}`, {
       method: "DELETE",
     });
     return;
