@@ -37,7 +37,8 @@ const AddUserPage = ({ addUserSubmit }) => {
 
     // constructing the new user object from form fields
     const newUser = {
-      name,
+      firstname,
+      lastname,
       savingsType,
       address,
       saving,
