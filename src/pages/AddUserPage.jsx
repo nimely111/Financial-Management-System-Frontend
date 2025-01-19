@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const AddUserPage = ({ addUserSubmit }) => {
-  const [name, setName] = useState("");
-  const [type, setType] = useState("Yearly");
+  const [firstname, setFirstname] = useState("");
+  const [savingsType, setSavingsType] = useState("Yearly");
   const [address, setAddress] = useState("");
   const [saving, setSaving] = useState("");
   const [currency, setCurrency] = useState("");
@@ -21,7 +21,7 @@ const AddUserPage = ({ addUserSubmit }) => {
     // validation
     if (
       !name ||
-      !type ||
+      !savingsType ||
       !address ||
       !saving ||
       !cityName ||
@@ -36,7 +36,7 @@ const AddUserPage = ({ addUserSubmit }) => {
     // constructing the new user object from form fields
     const newUser = {
       name,
-      type,
+      savingsType,
       address,
       saving,
       currency,
@@ -67,17 +67,17 @@ const AddUserPage = ({ addUserSubmit }) => {
 
             <div className="mb-4">
               <label
-                htmlFor="type"
+                htmlFor="savingsType"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Saving's Type
+                Saving's SavingsType
               </label>
               <select
-                id="type"
-                name="type"
+                id="savingsType"
+                name="savingsType"
                 className="border rounded w-full py-2 px-3"
-                value={type}
-                onChange={(e) => setType(e.target.value)}
+                value={savingsType}
+                onChange={(e) => setSavingsType(e.target.value)}
               >
                 <option value="Yearly">Yearly</option>
                 <option value="Monthly">Monthly</option>
@@ -90,7 +90,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 User Name
               </label>
               <input
-                type="text"
+                savingsType="text"
                 id="name"
                 name="name"
                 className="border rounded w-full py-2 px-3 mb-2"
@@ -102,13 +102,13 @@ const AddUserPage = ({ addUserSubmit }) => {
 
             <div className="mb-4">
               <label
-                htmlFor="type"
+                htmlFor="savingsType"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Saving's Amount
               </label>
               <input
-                type="number"
+                savingsType="number"
                 id="saving"
                 name="saving"
                 className="border rounded w-full py-2 px-3"
@@ -120,7 +120,7 @@ const AddUserPage = ({ addUserSubmit }) => {
             {/* saving's currency starts */}
             <div className="mb-4">
               <label
-                htmlFor="type"
+                htmlFor="savingsType"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Currency
@@ -145,7 +145,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 City Address
               </label>
               <input
-                type="text"
+                savingsType="text"
                 id="address"
                 name="address"
                 className="border rounded w-full py-2 px-3 mb-2"
@@ -165,7 +165,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 City Name
               </label>
               <input
-                type="text"
+                savingsType="text"
                 id="city"
                 name="city"
                 className="border rounded w-full py-2 px-3"
@@ -201,7 +201,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 Contact Email
               </label>
               <input
-                type="email"
+                savingsType="email"
                 id="contact_email"
                 name="contact_email"
                 className="border rounded w-full py-2 px-3"
@@ -218,7 +218,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 Contact Phone
               </label>
               <input
-                type="tel"
+                savingsType="tel"
                 id="contact_phone"
                 name="contact_phone"
                 className="border rounded w-full py-2 px-3"
@@ -231,7 +231,7 @@ const AddUserPage = ({ addUserSubmit }) => {
             <div>
               <button
                 className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
-                type="submit"
+                savingsType="submit"
               >
                 Add Admission
               </button>
