@@ -21,7 +21,8 @@ const AddUserPage = ({ addUserSubmit }) => {
 
     // validation
     if (
-      !name ||
+      !firstname ||
+      !lastname ||
       !savingsType ||
       !address ||
       !saving ||
