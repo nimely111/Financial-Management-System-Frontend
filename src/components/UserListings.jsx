@@ -80,7 +80,7 @@ const UserListings = ({ isHome = false }) => {
                   <tr key={user.id} className="hover:bg-gray-100 text-left">
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       <span className="font-bold text-blue-500 hover:underline hover:cursor-pointer">
-                        #{user.id}
+                        {user.id}
                       </span>
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
