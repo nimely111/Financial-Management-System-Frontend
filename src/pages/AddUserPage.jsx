@@ -90,6 +90,20 @@ const AddUserPage = ({ addUserSubmit }) => {
 
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">
+                User First Name
+              </label>
+              <input
+                savingsType="text"
+                id="name"
+                name="name"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Enter First Name"
+                value={firstname}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">
                 User Name
               </label>
               <input
