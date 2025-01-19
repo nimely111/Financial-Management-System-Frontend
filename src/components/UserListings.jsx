@@ -97,7 +97,7 @@ const UserListings = ({ isHome = false }) => {
                       {user.saving}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.currency.slice(0, 4)}
+                      {user.currency}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {logo ? (
