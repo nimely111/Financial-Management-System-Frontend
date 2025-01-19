@@ -92,7 +92,7 @@ const UserListings = ({ isHome = false }) => {
                       {user.type}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.location}
+                      {user.address}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.saving}
