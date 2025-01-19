@@ -17,7 +17,7 @@ const UserListings = ({ isHome = false }) => {
 
       try {
         const response = await fetch(apiUrl);
-
+        // add toast notification here for error fetching users
         if (!response.ok) {
           throw new Error(`Failed to fetch users: ${response.statusText}`);
         }
