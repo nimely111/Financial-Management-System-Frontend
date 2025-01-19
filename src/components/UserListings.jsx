@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
 import logo from "../assets/images/accnt-finance-logo.png";
+import { BACKEND_URL } from "../api";
 
 const UserListings = ({ isHome = false }) => {
   const [users, setUsers] = useState([]);
