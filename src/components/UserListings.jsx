@@ -6,26 +6,33 @@ import { BACKEND_URL } from "../api";
 
 const UserListings = ({ isHome = false }) => {
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true); // Show spinner when fetching
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUsers = async () => {
+      // Adjust the URL based on the `isHome` prop
       const apiUrl = isHome
-        ? `/${BACKEND_URL}/users?_limit=3`
+        ? `${BACKEND_URL}/users?limit=3`
         : `${BACKEND_URL}/users`;
+
       try {
-        const res = await fetch(apiUrl);
-        const data = await res.json();
+        const response = await fetch(apiUrl);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch users: ${response.statusText}`);
+        }
+
+        const data = await response.json();
         setUsers(data);
       } catch (error) {
-        console.log("Error fetching data", error);
+        console.error("Error fetching data:", error);
       } finally {
         setLoading(false);
       }
     };
 
     fetchUsers();
-  }, []);
+  }, [isHome]);
 
   return (
     <section className="bg-blue-50 px-4 py-10">
