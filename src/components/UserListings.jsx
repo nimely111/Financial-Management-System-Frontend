@@ -33,6 +33,7 @@ const UserListings = ({ isHome = false }) => {
 
     fetchUsers();
   }, [isHome]);
+  console.log(users);
 
   return (
     <section className="bg-blue-50 px-4 py-10">
@@ -84,7 +85,7 @@ const UserListings = ({ isHome = false }) => {
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       <span className="font-bold text-blue-500">
-                        {user.name}
+                        {user.firstname}
                       </span>
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
