@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const AddUserPage = ({ addUserSubmit }) => {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
   const [savingsType, setSavingsType] = useState("Yearly");
   const [address, setAddress] = useState("");
   const [saving, setSaving] = useState("");
@@ -98,8 +98,8 @@ const AddUserPage = ({ addUserSubmit }) => {
                 name="name"
                 className="border rounded w-full py-2 px-3 mb-2"
                 placeholder="Enter Full Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={firstname}
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
 
