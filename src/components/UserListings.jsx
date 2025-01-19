@@ -85,7 +85,7 @@ const UserListings = ({ isHome = false }) => {
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       <span className="font-bold text-blue-500">
-                        {user.firstname}
+                        {user.firstname} {user.lastname}
                       </span>
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
