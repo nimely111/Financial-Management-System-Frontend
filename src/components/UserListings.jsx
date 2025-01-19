@@ -103,7 +103,7 @@ const UserListings = ({ isHome = false }) => {
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {logo ? (
                         <img
-                          src={logo}
+                          src={user.profile_picture}
                           alt={logo}
                           className="md:w-16 md:h-16 object-cover rounded-full sm:w-8 sm:h-8"
                         />
