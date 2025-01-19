@@ -114,7 +114,7 @@ const UserListings = ({ isHome = false }) => {
                     <td className="py-2 text-left tracking-wide px-4 border-b">
                       <div className="flex space-x-2">
                         <Link
-                          to={`/users/${user.id}`}
+                          to={`${BACKEND_URL}/users/${user.id}`}
                           className="bg-blue-500 hover:bg-blue-600 text-white py-1 px-3 rounded"
                         >
                           Details
