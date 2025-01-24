@@ -89,22 +89,28 @@ const UserListings = ({ isHome = false }) => {
                       </span>
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.type}
+                      {user.transactions.length > 0
+                        ? user.transactions[0].type
+                        : "N/A"}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.saving}
+                      {user.transactions.length > 0
+                        ? user.transactions[0].saving
+                        : "N/A"}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.currency}
+                      {user.transactions.length > 0
+                        ? user.transactions[0].currency
+                        : "N/A"}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {logo ? (
                         <img
                           src={logo}
-                          alt={logo}
+                          alt="logo"
                           className="md:w-16 md:h-16 object-cover rounded-full sm:w-8 sm:h-8"
                         />
                       ) : (
@@ -114,7 +120,7 @@ const UserListings = ({ isHome = false }) => {
                     <td className="py-2 text-left tracking-wide px-4 border-b">
                       <div className="flex space-x-2">
                         <Link
-                          to={`${BACKEND_URL}/users/${user.id}`}
+                          to={`/users/${user.id}`}
                           className="bg-blue-500 hover:bg-blue-600 text-white py-1 px-3 rounded"
                         >
                           Details
