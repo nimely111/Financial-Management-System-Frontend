@@ -27,6 +27,7 @@ const UserListings = ({ isHome = false }) => {
         setUsers(data);
       } catch (error) {
         console.error("Error fetching data:", error);
+        toast.error("Failed to load users. Please try again.");
       } finally {
         setLoading(false);
       }
