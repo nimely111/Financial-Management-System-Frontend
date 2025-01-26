@@ -96,9 +96,7 @@ const UserListings = ({ isHome = false }) => {
                       {user.address}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.transactions.length > 0
-                        ? user.transactions[0].saving
-                        : "N/A"}
+                      {user.transactions.amount}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.transactions.length > 0
