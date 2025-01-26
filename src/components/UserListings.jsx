@@ -90,9 +90,7 @@ const UserListings = ({ isHome = false }) => {
                       </span>
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.transactions.length > 0
-                        ? user.transactions[0].type
-                        : "N/A"}
+                      {user.transactions.savings_type}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
