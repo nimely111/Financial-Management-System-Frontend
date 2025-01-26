@@ -100,7 +100,7 @@ const UserPage = ({ deleteUser }) => {
 
                 {/* <h2 className="text-2xl">{user.city.name}</h2> */}
 
-                <p className="my-2">{user.city.about}</p>
+                {/* <p className="my-2">{user.city.about}</p> */}
 
                 <hr className="my-4" />
 
