@@ -114,7 +114,7 @@ const UserPage = ({ deleteUser }) => {
 
                 <p className="my-2 bg-green-100 p-2 font-bold">
                   {" "}
-                  {user.city.contactPhone}
+                  {/* {user.city.contactPhone} */}
                 </p>
               </div>
 
