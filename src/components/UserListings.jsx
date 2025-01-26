@@ -99,9 +99,7 @@ const UserListings = ({ isHome = false }) => {
                       {user.transactions.amount}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.transactions.length > 0
-                        ? user.transactions[0].currency
-                        : "N/A"}
+                      {user.transactions.currency}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {logo ? (
