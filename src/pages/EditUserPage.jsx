@@ -144,11 +144,11 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 City Name
               </label> */}
               {/* <input */}
-              // type="text" // id="city" // name="city" // className="border
-              rounded w-full py-2 px-3" // placeholder="City Name" // value=
-              {/* {cityName} */}
-              {/* // onChange={(e) => setCityName(e.target.value)} */}
-              {/* > */}
+              {/* // type="text" // id="city" // name="city" // className="border */}
+              {/* rounded w-full py-2 px-3" // placeholder="City Name" // value=
+              {cityName} */}
+              {/* // onChange={(e) => setCityName(e.target.value)}
+              > */}
             </div>
 
             <div className="mb-4">
