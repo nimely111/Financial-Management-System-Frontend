@@ -74,7 +74,6 @@ const UserPage = ({ deleteUser }) => {
                 </h3>
 
                 <p className="mb-4">
-                  {user.saving}
                   <span className="ml-1">
                     {/* Iterate over transactions */}
                     {user.transactions.length > 0 ? (
