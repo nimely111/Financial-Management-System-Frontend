@@ -137,21 +137,18 @@ const EditUserPage = ({ updateUserSubmit }) => {
 
             <h3 className="text-2xl mb-5">User Info</h3>
             <div className="mb-4">
-              <label
+              {/* <label
                 htmlFor="city"
                 className="block text-gray-700 font-bold mb-2"
               >
                 City Name
-              </label>
-              <input
-                type="text"
-                id="city"
-                name="city"
-                className="border rounded w-full py-2 px-3"
-                placeholder="City Name"
-                value={cityName}
-                onChange={(e) => setCityName(e.target.value)}
-              />
+              </label> */}
+              {/* <input */}
+              // type="text" // id="city" // name="city" // className="border
+              rounded w-full py-2 px-3" // placeholder="City Name" // value=
+              {/* {cityName} */}
+              {/* // onChange={(e) => setCityName(e.target.value)} */}
+              {/* > */}
             </div>
 
             <div className="mb-4">
