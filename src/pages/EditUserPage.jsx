@@ -27,12 +27,8 @@ const EditUserPage = ({ updateUserSubmit }) => {
       address,
       savingAmount,
       savingCurrency,
-      city: {
-        name: cityName,
-        about: aboutUser,
-        contactEmail,
-        contactPhone,
-      },
+      contactEmail,
+      contactPhone,
     };
 
     updateUserSubmit(updatedUser);
