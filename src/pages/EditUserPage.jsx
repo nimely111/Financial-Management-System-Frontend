@@ -28,6 +28,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       address,
       savingAmount,
       savingCurrency,
+      cityName,
       contactEmail,
       contactPhone,
     };
