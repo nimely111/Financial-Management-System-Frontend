@@ -21,7 +21,8 @@ const EditUserPage = ({ updateUserSubmit }) => {
 
     const updatedUser = {
       id,
-      name,
+      firstname,
+      lastname,
       type,
       location,
       saving,
