@@ -102,6 +102,16 @@ const UserListings = ({ isHome = false }) => {
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
                     </td>
+                    <td>
+                      {/* Iterate over transactions */}
+                      {user.transactions.length > 0 ? (
+                        user.transactions.map((transaction, index) => (
+                          <p>{transaction.savings_amount}</p>
+                        ))
+                      ) : (
+                        <p>N/A</p>
+                      )}
+                    </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {logo ? (
                         <img
