@@ -89,18 +89,21 @@ const UserListings = ({ isHome = false }) => {
                         {user.firstname} {user.lastname}
                       </span>
                     </td>
-                    <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {/* Iterate over transactions to get each users transactions*/}
-                      {user.transactions.length > 0()}
+                    <td
+                      colSpan={5}
+                      className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap"
+                    >
+                      {/* Iterate over transactions */}
+                      {user.transactions.length > 0 ? (
+                        user.transactions.map((transaction, index) => (
+                          <p>{transaction.savings_type}</p>
+                        ))
+                      ) : (
+                        <p>No transactions available</p>
+                      )}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
-                    </td>
-                    <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.transactions.amount}
-                    </td>
-                    <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.transactions.currency}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {logo ? (
