@@ -93,8 +93,8 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 id="saving"
                 name="saving"
                 className="border rounded w-full py-2 px-3"
-                value={saving}
-                onChange={(e) => setSaving(e.target.value)}
+                value={savingAmount}
+                onChange={(e) => setSavingAmount(e.target.value)}
               />
             </div>
             {/* saving's currency starts */}
