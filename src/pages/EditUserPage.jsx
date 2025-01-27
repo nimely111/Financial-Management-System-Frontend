@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 const EditUserPage = ({ updateUserSubmit }) => {
   const user = useLoaderData();
-  const [name, setName] = useState(user.firstname);
+  const [firstname, setFirstName] = useState(user.firstname);
   const [name, setName] = useState(user.lastname);
   const [type, setType] = useState(user.type);
   const [location, setLocation] = useState(user.address);
