@@ -23,7 +23,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       id,
       firstname,
       lastname,
-      type,
+      savings_type,
       address,
       saving,
       currency,
