@@ -10,8 +10,8 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [address, setAddress] = useState(user.address);
   const [savingAmount, setSavingAmount] = useState(user.savings_amount);
   const [savingcurrency, setSavingCurrency] = useState(user.savings_currency);
-  const [contactEmail, setContactEmail] = useState(user.city.contactEmail);
-  const [contactPhone, setContactPhone] = useState(user.city.contactPhone);
+  const [contactEmail, setContactEmail] = useState(user.contact_email);
+  const [contactPhone, setContactPhone] = useState(user.contact_phone);
 
   const navigate = useNavigate();
   const { id } = useParams();
