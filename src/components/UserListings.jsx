@@ -90,7 +90,8 @@ const UserListings = ({ isHome = false }) => {
                       </span>
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {user.transactions.savings_type}
+                      {/* Iterate over transactions to get each users transactions*/}
+                      {user.transactions.length > 0()}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
