@@ -110,7 +110,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 name="currency"
                 className="border rounded w-full py-2 px-3"
                 value={savingCurrency}
-                onChange={(e) => setCurrency(e.target.value)}
+                onChange={(e) => setSavingCurrency(e.target.value)}
               >
                 <option value="LRD / Day">LRD / Day</option>
                 <option value="USD / Day">USD / Day</option>
