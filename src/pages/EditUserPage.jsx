@@ -24,7 +24,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       firstname,
       lastname,
       type,
-      location,
+      address,
       saving,
       currency,
       city: {
@@ -126,16 +126,16 @@ const EditUserPage = ({ updateUserSubmit }) => {
 
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">
-                City Location
+                City Address
               </label>
               <input
                 type="text"
-                id="location"
-                name="location"
+                id="address"
+                name="address"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="City Location"
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
+                placeholder="City Address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
               />
             </div>
 
