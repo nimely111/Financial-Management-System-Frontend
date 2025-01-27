@@ -96,7 +96,7 @@ const UserListings = ({ isHome = false }) => {
                           <p>{transaction.savings_type}</p>
                         ))
                       ) : (
-                        <p>No transactions available</p>
+                        <p>N/A</p>
                       )}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
