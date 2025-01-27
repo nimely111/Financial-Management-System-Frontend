@@ -78,7 +78,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 className="border rounded w-full py-2 px-3 mb-2"
                 placeholder="eg. Enter Full Name"
                 value={firstname}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
             <div className="mb-4">
