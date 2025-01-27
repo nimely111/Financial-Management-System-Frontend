@@ -23,9 +23,9 @@ const EditUserPage = ({ updateUserSubmit }) => {
       id,
       firstname,
       lastname,
-      savings_type,
+      savingsType,
       address,
-      saving,
+      savingAmount,
       currency,
       city: {
         name: cityName,
