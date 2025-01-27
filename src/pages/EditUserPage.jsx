@@ -59,7 +59,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 name="type"
                 className="border rounded w-full py-2 px-3"
                 value={type}
-                onChange={(e) => setType(e.target.value)}
+                onChange={(e) => setSavingsType(e.target.value)}
               >
                 <option value="Yearly">Yearly</option>
                 <option value="Monthly">Monthly</option>
