@@ -89,10 +89,7 @@ const UserListings = ({ isHome = false }) => {
                         {user.firstname} {user.lastname}
                       </span>
                     </td>
-                    <td
-                      colSpan={5}
-                      className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap"
-                    >
+                    <td>
                       {/* Iterate over transactions */}
                       {user.transactions.length > 0 ? (
                         user.transactions.map((transaction, index) => (
