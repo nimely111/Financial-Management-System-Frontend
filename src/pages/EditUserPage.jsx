@@ -152,13 +152,13 @@ const EditUserPage = ({ updateUserSubmit }) => {
             </div>
 
             <div className="mb-4">
-              <label
+              {/* <label
                 htmlFor="city_about"
                 className="block text-gray-700 font-bold mb-2"
               >
                 About User
-              </label>
-              <textarea
+              </label> */}
+              {/* <textarea
                 id="about"
                 name="about"
                 className="border rounded w-full py-2 px-3"
@@ -166,7 +166,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 placeholder="Describe yourself"
                 value={aboutUser}
                 onChange={(e) => setAboutUser(e.target.value)}
-              ></textarea>
+              ></textarea> */}
             </div>
 
             <div className="mb-4">
