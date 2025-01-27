@@ -115,7 +115,7 @@ const UserPage = ({ deleteUser }) => {
                 <h3 className="text-xl">Contact Email:</h3>
 
                 <p className="my-2 bg-green-100 p-2 font-bold">
-                  {/* {user.city.contactEmail} */}
+                  {user.contact_email}
                 </p>
 
                 <h3 className="text-xl">Contact Phone:</h3>
