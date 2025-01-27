@@ -7,7 +7,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [firstname, setFirstName] = useState(user.firstname);
   const [lastname, setLastName] = useState(user.lastname);
   const [savingsType, setSavingsType] = useState(user.savings_type);
-  const [location, setLocation] = useState(user.address);
+  const [address, setAddress] = useState(user.address);
   const [saving, setSaving] = useState(user.saving);
   const [currency, setCurrency] = useState(user.currency);
   const [cityName, setCityName] = useState(user.city.name);
