@@ -75,7 +75,16 @@ const UserPage = ({ deleteUser }) => {
 
                 <p className="mb-4">
                   {user.saving}
-                  <span className="ml-1">{user.currency}</span>
+                  <span className="ml-1">
+                    {/* Iterate over transactions */}
+                    {user.transactions.length > 0 ? (
+                      user.transactions.map((transaction, index) => (
+                        <p>{transaction.savings_amount}</p>
+                      ))
+                    ) : (
+                      <p>N/A</p>
+                    )}
+                  </span>
                 </p>
               </div>
 
