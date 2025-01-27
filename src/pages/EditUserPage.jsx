@@ -6,7 +6,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const user = useLoaderData();
   const [firstname, setFirstName] = useState(user.firstname);
   const [lastname, setLastName] = useState(user.lastname);
-  const [type, setType] = useState(user.type);
+  const [savingsType, setSavingsType] = useState(user.savings_type);
   const [location, setLocation] = useState(user.address);
   const [saving, setSaving] = useState(user.saving);
   const [currency, setCurrency] = useState(user.currency);
