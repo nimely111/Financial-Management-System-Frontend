@@ -127,8 +127,8 @@ const AddUserPage = ({ addUserSubmit }) => {
               </label>
               <input
                 type="text"
-                id="savingAmount"
-                name="savingAmount"
+                id="saving_amount"
+                name="saving_amount"
                 className="border rounded w-full py-2 px-3"
                 value={savingAmount}
                 onChange={(e) => setSavingAmount(e.target.value)}
