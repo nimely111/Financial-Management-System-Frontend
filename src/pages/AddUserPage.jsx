@@ -24,7 +24,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       !lastname ||
       !savingsType ||
       !address ||
-      !saving ||
+      !savingAmount ||
       !cityName ||
       // !aboutUser ||
       !contactEmail ||
