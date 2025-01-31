@@ -163,7 +163,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 City Address
               </label>
               <input
-                savingsType="text"
+                type="text"
                 id="address"
                 name="address"
                 className="border rounded w-full py-2 px-3 mb-2"
