@@ -26,7 +26,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       !address ||
       !saving ||
       !cityName ||
-      !aboutUser ||
+      // !aboutUser ||
       !contactEmail ||
       !contactPhone
     ) {
@@ -191,9 +191,9 @@ const AddUserPage = ({ addUserSubmit }) => {
                 onChange={(e) => setCityName(e.target.value)}
               />
             </div>
-
-            <div className="mb-4">
-              <label
+    {/* about user */}
+            {/* <div className="mb-4">
+             <label
                 htmlFor="city_about"
                 className="block text-gray-700 font-bold mb-2"
               >
@@ -208,7 +208,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 value={aboutUser}
                 onChange={(e) => setAboutUser(e.target.value)}
               ></textarea>
-            </div>
+            </div> */}
 
             <div className="mb-4">
               <label
