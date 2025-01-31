@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Avatar from "react-avatar";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
 import logo from "../assets/images/accnt-finance-logo.png";
