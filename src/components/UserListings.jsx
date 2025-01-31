@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import Avatar from "react-avatar";
 import { Link } from "react-router-dom";
+import Avatar from "react-avatar"; // Import react-avatar
 import Spinner from "./Spinner";
-import logo from "../assets/images/accnt-finance-logo.png";
 import { BACKEND_URL } from "../api";
 import { toast } from "react-toastify";
 
@@ -12,7 +11,6 @@ const UserListings = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      // Adjust the URL based on the `isHome` prop
       const apiUrl = isHome
         ? `${BACKEND_URL}/users?limit=3`
         : `${BACKEND_URL}/users`;
@@ -35,7 +33,6 @@ const UserListings = ({ isHome = false }) => {
 
     fetchUsers();
   }, [isHome]);
-  console.log(users);
 
   return (
     <section className="bg-blue-50 px-4 py-10">
@@ -91,10 +88,9 @@ const UserListings = ({ isHome = false }) => {
                       </span>
                     </td>
                     <td>
-                      {/* Iterate over transactions */}
                       {user.transactions.length > 0 ? (
                         user.transactions.map((transaction, index) => (
-                          <p>{transaction.savings_type}</p>
+                          <p key={index}>{transaction.savings_type}</p>
                         ))
                       ) : (
                         <p>N/A</p>
@@ -104,35 +100,30 @@ const UserListings = ({ isHome = false }) => {
                       {user.address}
                     </td>
                     <td>
-                      {/* Iterate over transactions */}
                       {user.transactions.length > 0 ? (
                         user.transactions.map((transaction, index) => (
-                          <p>{transaction.savings_amount}</p>
+                          <p key={index}>{transaction.savings_amount}</p>
                         ))
                       ) : (
                         <p>N/A</p>
                       )}
                     </td>
                     <td>
-                      {/* Iterate over transactions */}
                       {user.transactions.length > 0 ? (
                         user.transactions.map((transaction, index) => (
-                          <p>{transaction.savings_currency}</p>
+                          <p key={index}>{transaction.savings_currency}</p>
                         ))
                       ) : (
                         <p>N/A</p>
                       )}
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
-                      {logo ? (
-                        <img
-                          src={logo}
-                          alt="logo"
-                          className="md:w-16 md:h-16 object-cover rounded-full sm:w-8 sm:h-8"
-                        />
-                      ) : (
-                        "No Image"
-                      )}
+                      <Avatar
+                        name={`${user.firstname} ${user.lastname}`}
+                        src={user.profile_picture || undefined}
+                        size="50"
+                        round={true}
+                      />
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b">
                       <div className="flex space-x-2">
