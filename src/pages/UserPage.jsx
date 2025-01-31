@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Avatar from "react-avatar";
 import { useParams, useLoaderData, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { Link } from "react-router-dom";
