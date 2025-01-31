@@ -94,9 +94,9 @@ const AddUserPage = ({ addUserSubmit }) => {
                 User First Name
               </label>
               <input
-                savingsType="text"
-                id="name"
-                name="name"
+                tupe="text"
+                id="firstname"
+                name="firstname"
                 className="border rounded w-full py-2 px-3 mb-2"
                 placeholder="Enter First Name"
                 value={firstname}
@@ -109,8 +109,8 @@ const AddUserPage = ({ addUserSubmit }) => {
               </label>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="lastname"
+                name="lastname"
                 className="border rounded w-full py-2 px-3 mb-2"
                 placeholder="Enter last Name"
                 value={lastname}
