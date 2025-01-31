@@ -31,7 +31,10 @@ const App = () => {
 
       const data = await res.json();
       return data;
-    } catch (error) {}
+    } catch (error) {
+      console.error("Error adding user:", error);
+      return null;
+    }
     return;
   };
 
