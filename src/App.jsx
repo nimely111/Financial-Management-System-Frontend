@@ -15,6 +15,11 @@ import { BACKEND_URL } from "./api";
 
 const App = () => {
   // // Add New User
+  try{
+
+  }catch(){
+
+  }
   const addUser = async (newUser) => {
     const res = await fetch(`${BACKEND_URL}/users`, {
       method: "POST",
