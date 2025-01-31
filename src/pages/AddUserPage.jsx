@@ -40,12 +40,13 @@ const AddUserPage = ({ addUserSubmit }) => {
       lastname,
       savingsType,
       address,
-      savingAmount,
+      savingAmount: Number(savingAmount),
       savingCurrency,
       cityName,
       contactEmail,
       contactPhone,
     };
+    
 
     // Call the API
     const addedUser = await addUserSubmit(newUser);
@@ -107,7 +108,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 User Last Name
               </label>
               <input
-                savingsType="text"
+                type="text"
                 id="name"
                 name="name"
                 className="border rounded w-full py-2 px-3 mb-2"
