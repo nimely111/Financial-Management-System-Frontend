@@ -150,7 +150,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 id="city"
                 name="city"
                 className="border
-              rounded w-full py-2 px-3"
+                rounded w-full py-2 px-3"
                 placeholder="City Name"
                 value={cityName}
                 onChange={(e) => setCityName(e.target.value)}
