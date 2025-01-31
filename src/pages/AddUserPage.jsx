@@ -183,7 +183,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 City Name
               </label>
               <input
-                savingsType="text"
+                type="text"
                 id="city"
                 name="city"
                 className="border rounded w-full py-2 px-3"
