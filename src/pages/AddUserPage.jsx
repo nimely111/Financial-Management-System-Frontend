@@ -40,7 +40,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       lastname,
       savingsType,
       address,
-      savingAmount: Number(savingAmount),
+      savingAmount,
       savingCurrency,
       cityName,
       contactEmail,
