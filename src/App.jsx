@@ -17,14 +17,14 @@ const App = () => {
   // // Add New User
   const addUser = async (newUser) => {
     try {
+      const res = await fetch(`${BACKEND_URL}/users`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newUser),
+      });
     } catch (error) {}
-    const res = await fetch(`${BACKEND_URL}/users`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newUser),
-    });
     return;
   };
 
