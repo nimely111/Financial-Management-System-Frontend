@@ -57,7 +57,7 @@ const UserPage = ({ deleteUser }) => {
                     name={`${user.firstname} ${user.lastname}`}
                     className="-mt-3 mb-5 mx-auto w-28 h-28 md:mx-0 rounded-full"
                     src={user.profile_picture || undefined}
-                    alt={logo}
+                    alt={`${user.firstname} ${user.lastname}`}
                   />
                 </span>
                 <div className="text-gray-500 mb-4">{user.type}</div>
