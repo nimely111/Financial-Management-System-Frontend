@@ -7,7 +7,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [lastname, setLastName] = useState("");
   const [savingsType, setSavingsType] = useState("Yearly");
   const [address, setAddress] = useState("");
-  const [saving, setSaving] = useState("");
+  const [savingAmount, setSavingAmount] = useState("");
   const [currency, setCurrency] = useState("");
   const [cityName, setCityName] = useState("");
   const [aboutUser, setAboutUser] = useState("");
