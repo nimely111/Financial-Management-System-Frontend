@@ -28,6 +28,9 @@ const App = () => {
       if (!res.ok) {
         throw new Error(`Failed to add user. Status: ${res.status}`);
       }
+
+      const data = await res.json();
+      return data;
     } catch (error) {}
     return;
   };
