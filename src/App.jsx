@@ -24,6 +24,10 @@ const App = () => {
         },
         body: JSON.stringify(newUser),
       });
+
+      if (!res.ok) {
+        throw new Error(`Failed to add user. Status: ${res.status}`);
+      }
     } catch (error) {}
     return;
   };
