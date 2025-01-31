@@ -10,7 +10,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [savingAmount, setSavingAmount] = useState("");
   const [savingCurrency, setSavingCurrency] = useState("");
   const [cityName, setCityName] = useState("");
-  const [aboutUser, setAboutUser] = useState("");
+  // const [aboutUser, setAboutUser] = useState("");
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
 
