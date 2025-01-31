@@ -15,11 +15,10 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [contactPhone, setContactPhone] = useState("");
 
   const navigate = useNavigate();
-
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
 
-    // validation
+    // Validation check
     if (
       !firstname ||
       !lastname ||
@@ -32,10 +31,10 @@ const AddUserPage = ({ addUserSubmit }) => {
       !contactPhone
     ) {
       toast.warning("Please fill in all fields");
-      return; // stop submission if validation fails
+      return;
     }
 
-    // constructing the new user object from form fields
+    // Create the new user object
     const newUser = {
       firstname,
       lastname,
@@ -51,12 +50,16 @@ const AddUserPage = ({ addUserSubmit }) => {
       },
     };
 
-    // submit the form
-    addUserSubmit(newUser);
+    // Call the API
+    const addedUser = await addUserSubmit(newUser);
 
-    // success toast and redirect
-    toast.success("User Added Successfully");
-    navigate("/users");
+    // Handle response
+    if (addedUser) {
+      toast.success("User Added Successfully");
+      navigate("/users"); // Navigate only if user was successfully added
+    } else {
+      toast.error("Failed to add user. Please try again.");
+    }
   };
 
   return (
