@@ -237,7 +237,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 Contact Phone
               </label>
               <input
-                savingsType="tel"
+                type="text"
                 id="contact_phone"
                 name="contact_phone"
                 className="border rounded w-full py-2 px-3"
