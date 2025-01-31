@@ -56,7 +56,7 @@ const UserPage = ({ deleteUser }) => {
                   <Avatar
                     name={`${user.firstname} ${user.lastname}`}
                     className="-mt-3 mb-5 mx-auto w-28 h-28 md:mx-0 rounded-full"
-                    src={logo}
+                    src={user.profile_picture || undefined}
                     alt={logo}
                   />
                 </span>
