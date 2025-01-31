@@ -40,14 +40,11 @@ const AddUserPage = ({ addUserSubmit }) => {
       lastname,
       savingsType,
       address,
-      saving,
-      currency,
-      city: {
-        name: cityName,
-        about: aboutUser,
-        contactEmail,
-        contactPhone,
-      },
+      savingAmount,
+      savingCurrency,
+      cityName,
+      contactEmail,
+      contactPhone,
     };
 
     // Call the API
