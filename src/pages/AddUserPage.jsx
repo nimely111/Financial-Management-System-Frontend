@@ -144,8 +144,8 @@ const AddUserPage = ({ addUserSubmit }) => {
                 Currency
               </label>
               <select
-                id="currency"
-                name="currency"
+                id="saving_currency"
+                name="saving_currency"
                 className="border rounded w-full py-2 px-3"
                 value={savingCurrency}
                 onChange={(e) => setSavingCurrency(e.target.value)}
@@ -184,8 +184,8 @@ const AddUserPage = ({ addUserSubmit }) => {
               </label>
               <input
                 type="text"
-                id="city"
-                name="city"
+                id="city_name"
+                name="city_name"
                 className="border rounded w-full py-2 px-3"
                 placeholder="City Name"
                 value={cityName}
@@ -219,7 +219,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 Contact Email
               </label>
               <input
-                savingsType="email"
+                type="text"
                 id="contact_email"
                 name="contact_email"
                 className="border rounded w-full py-2 px-3"
