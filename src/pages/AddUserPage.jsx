@@ -77,8 +77,9 @@ const AddUserPage = ({ addUserSubmit }) => {
                 Saving's SavingsType
               </label>
               <select
-                id="savingsType"
-                name="savingsType"
+                id="savings_type"
+                name="                id="savings_type"
+"
                 className="border rounded w-full py-2 px-3"
                 value={savingsType}
                 onChange={(e) => setSavingsType(e.target.value)}
