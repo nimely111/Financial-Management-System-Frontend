@@ -100,13 +100,7 @@ const UserListings = ({ isHome = false }) => {
                       {user.address}
                     </td>
                     <td>
-                      {user.transactions.length > 0 ? (
-                        user.transactions.map((transaction, index) => (
-                          <p key={index}>{transaction.savings_amount}</p>
-                        ))
-                      ) : (
-                        <p>N/A</p>
-                      )}
+                      <Transactions />
                     </td>
                     <td>
                       {user.transactions.length > 0 ? (
