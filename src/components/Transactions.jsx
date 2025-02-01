@@ -1,3 +1,5 @@
+import { BACKEND_URL } from "../api";
+
 const Transactions = () => {
   return (
     <>
