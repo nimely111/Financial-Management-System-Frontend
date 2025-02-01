@@ -4,6 +4,7 @@ import Avatar from "react-avatar";
 import Spinner from "./Spinner";
 import { BACKEND_URL } from "../api";
 import { toast } from "react-toastify";
+import Transactions from "./Transactions";
 
 const UserListings = ({ isHome = false }) => {
   const [users, setUsers] = useState([]);
