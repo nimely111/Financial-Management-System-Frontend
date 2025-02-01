@@ -1,6 +1,8 @@
 const Transactions = () {
     return(
+        <section>
         
+        </section>
     )
 }
 
