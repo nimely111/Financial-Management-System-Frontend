@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Avatar from "react-avatar"; // Import react-avatar
+import Avatar from "react-avatar";
 import Spinner from "./Spinner";
 import { BACKEND_URL } from "../api";
 import { toast } from "react-toastify";
