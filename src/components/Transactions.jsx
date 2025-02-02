@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BACKEND_URL } from "../api";
 import { toast } from "react-toastify";
 
-const Transactions = ({ type }) => {
+const Transactions = ({ type, amount }) => {
   return (
     <>
       {transactions.length > 0 ? (
