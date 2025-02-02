@@ -110,7 +110,7 @@ const UserListings = ({ isHome = false }) => {
                       </span>
                     </td>
                     <td>
-                      <Transactions transactions={user.transactions} />
+                      <Transactions type={user.type} />
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
