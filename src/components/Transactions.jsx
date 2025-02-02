@@ -2,22 +2,17 @@ import { useState, useEffect } from "react";
 import { BACKEND_URL } from "../api";
 import { toast } from "react-toastify";
 
-const Transactions = ({
-  transactions,
-  saving_type,
-  saving_amount,
-  saving_currency,
-}) => {
+const Transactions = ({ transactions, field }) => {
   return (
-    <>
+    <td>
       {transactions.length > 0 ? (
-        type.map((transaction, index) => (
-          <p key={index}>{transaction.savings_amount}</p>
+        transactions.map((transaction, index) => (
+          <p key={index}>{transaction[field]}</p>
         ))
       ) : (
         <p>N/A</p>
       )}
-    </>
+    </td>
   );
 };
 
