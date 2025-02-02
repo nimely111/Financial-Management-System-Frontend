@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { BACKEND_URL } from "../api";
 import { toast } from "react-toastify";
 
-const Transactions = ({ transactions }) => {
+const Transactions = ({ type }) => {
   return (
     <>
       {transactions.length > 0 ? (
-        transactions.map((transaction, index) => (
+        type.map((transaction, index) => (
           <p key={index}>{transaction.savings_amount}</p>
         ))
       ) : (
