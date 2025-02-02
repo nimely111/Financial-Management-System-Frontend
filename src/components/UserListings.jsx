@@ -89,13 +89,7 @@ const UserListings = ({ isHome = false }) => {
                       </span>
                     </td>
                     <td>
-                      {user.transactions.length > 0 ? (
-                        user.transactions.map((transaction, index) => (
-                          <p key={index}>{transaction.savings_type}</p>
-                        ))
-                      ) : (
-                        <p>N/A</p>
-                      )}
+                      <Transactions transactions={user.transactions} />
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
                       {user.address}
