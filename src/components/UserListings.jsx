@@ -112,7 +112,7 @@ const UserListings = ({ isHome = false }) => {
                     <td>
                       <Transactions
                         transactions={user.transactions}
-                        field="saving_type"
+                        field="savings_type"
                       />
                     </td>
                     <td className="py-2 text-left tracking-wide px-4 border-b whitespace-nowrap">
