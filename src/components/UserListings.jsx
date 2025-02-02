@@ -10,7 +10,7 @@ const UserListings = ({ isHome = false }) => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const usersPerPage = 5; // Set pagination to display 5 users per page
+  const usersPerPage = 5;
 
   useEffect(() => {
     const fetchUsers = async () => {
