@@ -101,7 +101,7 @@ const UserListings = ({ isHome = false }) => {
                       {user.address}
                     </td>
                     <td>
-                      <Transactions />
+                      <Transactions transactions={user.transactions} />
                     </td>
                     <td>
                       {user.transactions.length > 0 ? (
