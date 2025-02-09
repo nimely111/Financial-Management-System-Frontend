@@ -45,7 +45,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       saving_currency,
       city_name,
       contact_email,
-      contactPhone,
+      contact_phone,
     };
 
     // Call the API
@@ -71,10 +71,10 @@ const AddUserPage = ({ addUserSubmit }) => {
 
             <div className="mb-4">
               <label
-                htmlFor="savingsType"
+                htmlFor="savings_type"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Saving's SavingsType
+                Saving'SavingsType
               </label>
               <select
                 id="savings_type"
