@@ -39,9 +39,9 @@ const AddUserPage = ({ addUserSubmit }) => {
     const newUser = {
       firstname,
       lastname,
-      savingsType,
+      savings_type,
       address,
-      savingAmount,
+      saving_amount,
       saving_currency,
       cityName,
       contactEmail,
