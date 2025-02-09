@@ -5,9 +5,9 @@ import { toast } from "react-toastify";
 const AddUserPage = ({ addUserSubmit }) => {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
-  const [savingsType, setSavingsType] = useState("Yearly");
+  const [savings_type, setSavingsType] = useState("Yearly");
   const [address, setAddress] = useState("");
-  const [savingAmount, setSavingAmount] = useState("");
+  const [saving_amount, setSavingAmount] = useState("");
   const [savingCurrency, setSavingCurrency] = useState("");
   const [cityName, setCityName] = useState("");
   // const [aboutUser, setAboutUser] = useState("");
