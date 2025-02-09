@@ -10,7 +10,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [address, setAddress] = useState(user.address);
   const [savings_amount, setSavingAmount] = useState(user.savings_amount);
   const [savings_currency, setSavingCurrency] = useState(user.savings_currency);
-  const [cityName, setCityName] = useState(user.city_name);
+  const [city_name, setCityName] = useState(user.city_name);
   const [contactEmail, setContactEmail] = useState(user.contact_email);
   const [contactPhone, setContactPhone] = useState(user.contact_phone);
 
@@ -28,7 +28,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       address,
       savings_amount,
       savings_currency,
-      cityName,
+      city_name,
       contactEmail,
       contactPhone,
     };
@@ -147,12 +147,12 @@ const EditUserPage = ({ updateUserSubmit }) => {
               </label>
               <input
                 type="text"
-                id="city"
-                name="city"
+                id="city_name"
+                name="city_name"
                 className="border
                 rounded w-full py-2 px-3"
                 placeholder="City Name"
-                value={cityName}
+                value={city_name}
                 onChange={(e) => setCityName(e.target.value)}
               />
             </div>
