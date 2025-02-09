@@ -32,11 +32,15 @@ const EditUserPage = ({ updateUserSubmit }) => {
       contact_phone,
     };
 
-    updateUserSubmit(updatedUser);
-
-    toast.success("User Updated Successfully");
-
-    return navigate(`/users/${id}`);
+    try {
+      // Await the asynchronous update call so you can handle errors if needed
+      await updateUserSubmit(updatedUser);
+      toast.success("User Updated Successfully");
+      navigate(`/users/${id}`);
+    } catch (error) {
+      console.error("Update error:", error);
+      toast.error("Failed to update user");
+    }
   };
 
   return (
