@@ -35,7 +35,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
 
     try {
       // Await the asynchronous update call so you can handle errors if needed
-      await updateUserSubmit(updatedUser);
+      await updateUserSubmit(id, updatedUser);
       toast.success("User Updated Successfully");
       navigate(`/users/${id}`);
     } catch (error) {
