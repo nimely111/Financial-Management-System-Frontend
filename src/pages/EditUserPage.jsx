@@ -11,7 +11,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [savings_amount, setSavingAmount] = useState(user.savings_amount);
   const [savings_currency, setSavingCurrency] = useState(user.savings_currency);
   const [city_name, setCityName] = useState(user.city_name);
-  const [contactEmail, setContactEmail] = useState(user.contact_email);
+  const [contact_email, setContactEmail] = useState(user.contact_email);
   const [contactPhone, setContactPhone] = useState(user.contact_phone);
 
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       savings_amount,
       savings_currency,
       city_name,
-      contactEmail,
+      contact_email,
       contactPhone,
     };
 
@@ -188,7 +188,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 name="contact_email"
                 className="border rounded w-full py-2 px-3"
                 placeholder="Email address for applicants"
-                value={contactEmail}
+                value={contact_email}
                 onChange={(e) => setContactEmail(e.target.value)}
               />
             </div>
