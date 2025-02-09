@@ -188,7 +188,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 name="city_name"
                 className="border rounded w-full py-2 px-3"
                 placeholder="City Name"
-                value={cityName}
+                value={city_name}
                 onChange={(e) => setCityName(e.target.value)}
               />
             </div>
