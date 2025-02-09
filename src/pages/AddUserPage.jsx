@@ -11,7 +11,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [saving_currency, setSavingCurrency] = useState("");
   const [city_name, setCityName] = useState("");
   // const [aboutUser, setAboutUser] = useState("");
-  const [contactEmail, setContactEmail] = useState("");
+  const [contact_email, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
 
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       !saving_currency ||
       !city_name ||
       // !aboutUser ||
-      !contactEmail ||
+      !contact_email ||
       !contactPhone
     ) {
       toast.warning("Please fill in all fields");
@@ -44,7 +44,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       saving_amount,
       saving_currency,
       city_name,
-      contactEmail,
+      contact_email,
       contactPhone,
     };
 
@@ -224,7 +224,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 name="contact_email"
                 className="border rounded w-full py-2 px-3"
                 placeholder="Email address for applicants"
-                value={contactEmail}
+                value={contact_email}
                 onChange={(e) => setContactEmail(e.target.value)}
               />
             </div>
