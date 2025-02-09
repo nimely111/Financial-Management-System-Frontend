@@ -9,7 +9,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [address, setAddress] = useState("");
   const [saving_amount, setSavingAmount] = useState("");
   const [saving_currency, setSavingCurrency] = useState("");
-  const [cityName, setCityName] = useState("");
+  const [city_name, setCityName] = useState("");
   // const [aboutUser, setAboutUser] = useState("");
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
@@ -26,7 +26,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       !address ||
       !saving_amount ||
       !saving_currency ||
-      !cityName ||
+      !city_name ||
       // !aboutUser ||
       !contactEmail ||
       !contactPhone
@@ -43,7 +43,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       address,
       saving_amount,
       saving_currency,
-      cityName,
+      city_name,
       contactEmail,
       contactPhone,
     };
