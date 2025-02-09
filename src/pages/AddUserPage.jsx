@@ -8,7 +8,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [savings_type, setSavingsType] = useState("Yearly");
   const [address, setAddress] = useState("");
   const [saving_amount, setSavingAmount] = useState("");
-  const [savingCurrency, setSavingCurrency] = useState("");
+  const [saving_currency, setSavingCurrency] = useState("");
   const [cityName, setCityName] = useState("");
   // const [aboutUser, setAboutUser] = useState("");
   const [contactEmail, setContactEmail] = useState("");
@@ -25,6 +25,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       !savings_type ||
       !address ||
       !saving_amount ||
+      !saving_currency ||
       !cityName ||
       // !aboutUser ||
       !contactEmail ||
@@ -41,7 +42,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       savingsType,
       address,
       savingAmount,
-      savingCurrency,
+      saving_currency,
       cityName,
       contactEmail,
       contactPhone,
