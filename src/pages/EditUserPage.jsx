@@ -17,11 +17,10 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
 
     const updatedUser = {
-      id,
       firstname,
       lastname,
       savings_type,
