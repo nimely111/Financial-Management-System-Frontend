@@ -241,7 +241,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 name="contact_phone"
                 className="border rounded w-full py-2 px-3"
                 placeholder="Optional phone for applicants"
-                value={contactPhone}
+                value={contact_phone}
                 onChange={(e) => setContactPhone(e.target.value)}
               />
             </div>
