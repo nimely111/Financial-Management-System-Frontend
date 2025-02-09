@@ -12,7 +12,7 @@ const AddUserPage = ({ addUserSubmit }) => {
   const [city_name, setCityName] = useState("");
   // const [aboutUser, setAboutUser] = useState("");
   const [contact_email, setContactEmail] = useState("");
-  const [contactPhone, setContactPhone] = useState("");
+  const [contact_phone, setContactPhone] = useState("");
 
   const navigate = useNavigate();
   const submitForm = async (e) => {
@@ -29,7 +29,7 @@ const AddUserPage = ({ addUserSubmit }) => {
       !city_name ||
       // !aboutUser ||
       !contact_email ||
-      !contactPhone
+      !contact_phone
     ) {
       toast.warning("Please fill in all fields");
       return;
