@@ -12,7 +12,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [savings_currency, setSavingCurrency] = useState(user.savings_currency);
   const [city_name, setCityName] = useState(user.city_name);
   const [contact_email, setContactEmail] = useState(user.contact_email);
-  const [contactPhone, setContactPhone] = useState(user.contact_phone);
+  const [contact_phone, setContactPhone] = useState(user.contact_phone);
 
   const navigate = useNavigate();
   const { id } = useParams();
@@ -30,7 +30,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       savings_currency,
       city_name,
       contact_email,
-      contactPhone,
+      contact_phone,
     };
 
     updateUserSubmit(updatedUser);
@@ -205,7 +205,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 name="contact_phone"
                 className="border rounded w-full py-2 px-3"
                 placeholder="Optional phone for applicants"
-                value={contactPhone}
+                value={contact_phone}
                 onChange={(e) => setContactPhone(e.target.value)}
               />
             </div>
