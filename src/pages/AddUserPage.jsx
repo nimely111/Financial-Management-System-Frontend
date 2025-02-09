@@ -74,7 +74,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 htmlFor="savings_type"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Saving'SavingsType
+                Savings Type
               </label>
               <select
                 id="savings_type"
