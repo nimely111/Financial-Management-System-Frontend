@@ -21,6 +21,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
     e.preventDefault();
 
     const updatedUser = {
+      id,
       firstname,
       lastname,
       savings_type,
