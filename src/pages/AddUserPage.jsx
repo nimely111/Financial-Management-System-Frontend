@@ -147,7 +147,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 id="saving_currency"
                 name="saving_currency"
                 className="border rounded w-full py-2 px-3"
-                value={savingCurrency}
+                value={saving_currency}
                 onChange={(e) => setSavingCurrency(e.target.value)}
               >
                 <option value="LRD / Day">LRD / Day</option>
