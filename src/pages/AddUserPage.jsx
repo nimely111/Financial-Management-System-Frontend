@@ -130,7 +130,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 id="saving_amount"
                 name="saving_amount"
                 className="border rounded w-full py-2 px-3"
-                value={savingAmount}
+                value={saving_amount}
                 onChange={(e) => setSavingAmount(e.target.value)}
               />
             </div>
