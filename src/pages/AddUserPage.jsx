@@ -80,7 +80,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 id="savings_type"
                 name="savings_type"
                 className="border rounded w-full py-2 px-3"
-                value={savingsType}
+                value={savings_type}
                 onChange={(e) => setSavingsType(e.target.value)}
               >
                 <option value="Yearly">Yearly</option>
