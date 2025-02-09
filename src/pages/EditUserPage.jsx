@@ -9,7 +9,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [savings_type, setSavingsType] = useState(user.savings_type);
   const [address, setAddress] = useState(user.address);
   const [savings_amount, setSavingAmount] = useState(user.savings_amount);
-  const [savingCurrency, setSavingCurrency] = useState(user.savings_currency);
+  const [savings_currency, setSavingCurrency] = useState(user.savings_currency);
   const [cityName, setCityName] = useState(user.city_name);
   const [contactEmail, setContactEmail] = useState(user.contact_email);
   const [contactPhone, setContactPhone] = useState(user.contact_phone);
@@ -27,7 +27,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       savings_type,
       address,
       savings_amount,
-      savingCurrency,
+      savings_currency,
       cityName,
       contactEmail,
       contactPhone,
@@ -108,10 +108,10 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 Currency
               </label>
               <select
-                id="currency"
-                name="currency"
+                id="savings_currency"
+                name="savings_currency"
                 className="border rounded w-full py-2 px-3"
-                value={savingCurrency}
+                value={savings_currency}
                 onChange={(e) => setSavingCurrency(e.target.value)}
               >
                 <option value="LRD / Day">LRD / Day</option>
