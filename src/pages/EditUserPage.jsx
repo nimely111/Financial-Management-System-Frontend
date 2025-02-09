@@ -8,7 +8,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const [lastname, setLastName] = useState(user.lastname);
   const [savings_type, setSavingsType] = useState(user.savings_type);
   const [address, setAddress] = useState(user.address);
-  const [savingAmount, setSavingAmount] = useState(user.savings_amount);
+  const [savings_amount, setSavingAmount] = useState(user.savings_amount);
   const [savingCurrency, setSavingCurrency] = useState(user.savings_currency);
   const [cityName, setCityName] = useState(user.city_name);
   const [contactEmail, setContactEmail] = useState(user.contact_email);
@@ -26,7 +26,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       lastname,
       savings_type,
       address,
-      savingAmount,
+      savings_amount,
       savingCurrency,
       cityName,
       contactEmail,
@@ -92,10 +92,10 @@ const EditUserPage = ({ updateUserSubmit }) => {
               </label>
               <input
                 type="number"
-                id="saving"
-                name="saving"
+                id="savings_amount"
+                name="savings_amount"
                 className="border rounded w-full py-2 px-3"
-                value={savingAmount}
+                value={savings_amount}
                 onChange={(e) => setSavingAmount(e.target.value)}
               />
             </div>
