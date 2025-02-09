@@ -22,9 +22,9 @@ const AddUserPage = ({ addUserSubmit }) => {
     if (
       !firstname ||
       !lastname ||
-      !savingsType ||
+      !savings_type ||
       !address ||
-      !savingAmount ||
+      !saving_amount ||
       !cityName ||
       // !aboutUser ||
       !contactEmail ||
@@ -46,7 +46,6 @@ const AddUserPage = ({ addUserSubmit }) => {
       contactEmail,
       contactPhone,
     };
-    
 
     // Call the API
     const addedUser = await addUserSubmit(newUser);
@@ -192,7 +191,7 @@ const AddUserPage = ({ addUserSubmit }) => {
                 onChange={(e) => setCityName(e.target.value)}
               />
             </div>
-    {/* about user */}
+            {/* about user */}
             {/* <div className="mb-4">
              <label
                 htmlFor="city_about"
