@@ -47,15 +47,20 @@ const App = () => {
   };
 
   // Update User
-  const updateUser = async (user) => {
-    const res = await fetch(`${BACKEND_URL}/users/${user.id}`, {
+  const updateUser = async (id, user) => {
+    const res = await fetch(`${BACKEND_URL}/users/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
     });
-    return;
+
+    // Optionally, check for errors:
+    if (!res.ok) {
+      throw new Error(`Update failed with status: ${res.status}`);
+    }
+    return await res.json();
   };
 
   const router = createBrowserRouter(
