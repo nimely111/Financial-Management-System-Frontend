@@ -6,7 +6,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
   const user = useLoaderData();
   const [firstname, setFirstName] = useState(user.firstname);
   const [lastname, setLastName] = useState(user.lastname);
-  const [savingsType, setSavingsType] = useState(user.savings_type);
+  const [savings_type, setSavingsType] = useState(user.savings_type);
   const [address, setAddress] = useState(user.address);
   const [savingAmount, setSavingAmount] = useState(user.savings_amount);
   const [savingCurrency, setSavingCurrency] = useState(user.savings_currency);
@@ -24,7 +24,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
       id,
       firstname,
       lastname,
-      savingsType,
+      savings_type,
       address,
       savingAmount,
       savingCurrency,
@@ -60,7 +60,7 @@ const EditUserPage = ({ updateUserSubmit }) => {
                 id="type"
                 name="type"
                 className="border rounded w-full py-2 px-3"
-                value={savingsType}
+                value={savings_type}
                 onChange={(e) => setSavingsType(e.target.value)}
               >
                 <option value="Yearly">Yearly</option>
