@@ -8,66 +8,59 @@ import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import UsersPage from "./pages/UsersPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import UserPage from "./pages/UserPage";
+import UserPage, { userLoader } from "./pages/UserPage";
 import AddUserPage from "./pages/AddUserPage";
 import EditUserPage from "./pages/EditUserPage";
-import { userService, transactionService, handleApiError } from "./apiService";
-import { toast } from "react-toastify";
+import { BACKEND_URL } from "./api";
 
 const App = () => {
-  // User operations with error handling
+  // // Add New User
   const addUser = async (newUser) => {
     try {
-      const data = await userService.createUser(newUser);
-      toast.success("User added successfully!");
+      const res = await fetch(`${BACKEND_URL}/users`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newUser),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Failed to add user. Status: ${res.status}`);
+      }
+
+      const data = await res.json();
       return data;
     } catch (error) {
-      toast.error(handleApiError(error));
-      throw error;
+      console.error("Error adding user:", error);
+      return null;
     }
+    return;
   };
 
+  // Delete User
   const deleteUser = async (user) => {
-    try {
-      await userService.deleteUser(user.id);
-      toast.success("User deleted successfully!");
-    } catch (error) {
-      toast.error(handleApiError(error));
-      throw error;
-    }
+    const res = await fetch(`${BACKEND_URL}/users/${user.id}`, {
+      method: "DELETE",
+    });
+    return;
   };
 
+  // Update User
   const updateUser = async (id, user) => {
-    try {
-      const data = await userService.updateUser(id, user);
-      toast.success("User updated successfully!");
-      return data;
-    } catch (error) {
-      toast.error(handleApiError(error));
-      throw error;
-    }
-  };
+    const res = await fetch(`${BACKEND_URL}/users/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    });
 
-  // Transaction operations
-  const addTransaction = async (newTransaction) => {
-    try {
-      const data = await transactionService.createTransaction(newTransaction);
-      toast.success("Transaction added successfully!");
-      return data;
-    } catch (error) {
-      toast.error(handleApiError(error));
-      throw error;
+    // Optionally, check for errors:
+    if (!res.ok) {
+      throw new Error(`Update failed with status: ${res.status}`);
     }
-  };
-
-  // Loader function
-  const userLoader = async ({ params }) => {
-    try {
-      return await userService.getUser(params.id);
-    } catch (error) {
-      toast.error(handleApiError(error));
-      throw error;
-    }
+    return await res.json();
   };
 
   const router = createBrowserRouter(
@@ -81,12 +74,7 @@ const App = () => {
         />
         <Route
           path="/edit-user/:id"
-          element={
-            <EditUserPage
-              updateUserSubmit={updateUser}
-              createTransactionSubmit={addTransaction}
-            />
-          }
+          element={<EditUserPage updateUserSubmit={updateUser} />}
           loader={userLoader}
         />
         <Route
@@ -101,5 +89,4 @@ const App = () => {
 
   return <RouterProvider router={router} />;
 };
-
 export default App;
