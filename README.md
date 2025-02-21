@@ -2,7 +2,7 @@
 
 ## Usage
 
-This project uses JSON-Server for a mock backend.
+This project uses FastAPI, a lightweight and high-performance Python framework, for the backend.
 
 ### Install Dependencies
 
