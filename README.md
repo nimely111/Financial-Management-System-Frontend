@@ -14,6 +14,18 @@ npm install
 
 To ensure the frontend runs on port 3000, update your vite.config.js file:
 
+```js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 3000,
+  },
+});
+```
+
 ### Run Vite Frontend
 
 React will run on http://localhost:3000
