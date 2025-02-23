@@ -1,4 +1,4 @@
-<img src="public/screen.png" />
+<img src="public/home_page.PNG" />
 
 ## Usage
 
