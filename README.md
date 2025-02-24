@@ -1,4 +1,5 @@
 <img src="public/home_page.PNG" />
+<img src="public/admissions.PNG" />
 
 ## Usage
 
