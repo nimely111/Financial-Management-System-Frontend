@@ -17,7 +17,7 @@ const Navbar = () => {
               <img
                 className="h-16 w-auto rounded-full"
                 src={logo}
-                alt="React Users"
+                alt="company logo"
               />
               <span className="hidden md:block text-white text-2xl font-bold ml-2">
                 Try & See Saving Club
